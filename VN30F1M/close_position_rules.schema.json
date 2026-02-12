@@ -1,0 +1,51 @@
+{
+    "type": "object",
+    "required": [
+        "rules"
+    ],
+    "properties": {
+        "rules": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "name",
+                    "time_management"
+                ],
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "time_management": {
+                        "type": "object",
+                        "required": [
+                            "max_holding_time"
+                        ],
+                        "properties": {
+                            "max_holding_time": {
+                                "type": "object",
+                                "required": [
+                                    "unit"
+                                ],
+                                "properties": {
+                                    "unit": {
+                                        "type": "string",
+                                        "enum": [
+                                            "bars",
+                                            "hours",
+                                            "days"
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                },
+                "additionalProperties": true
+            }
+        }
+    },
+    "additionalProperties": true
+}

@@ -1,0 +1,36 @@
+{
+    "$schema": "./close_position_rules.schema.json",
+    "rules": [
+        {
+            "name": "Style 001",
+            "id": "style_001",
+            "created_at": "2026-02-12",
+            "risk_management": {
+                "stop_loss": {
+                    "type": "percent",
+                    "value": 0.33
+                },
+                "take_profit": {
+                    "type": "percent",
+                    "value": 1.32
+                },
+                "trailing_stop_loss": {
+                    "type": "percent",
+                    "value": 0.35
+                }
+            },
+            "time_management": {
+                "hold_overnight": {
+                    "type": "boolean",
+                    "value": true
+                },
+                "max_holding_time": {
+                    "enabled": false,
+                    "unit": "bars",
+                    "value": 0
+                },
+                "force_close_at": "14:45"
+            }
+        }
+    ]
+}
