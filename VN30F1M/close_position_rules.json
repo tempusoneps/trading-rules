@@ -2,8 +2,8 @@
     "$schema": "./close_position_rules.schema.json",
     "rules": [
         {
-            "name": "Style 001",
-            "id": "style_001",
+            "name": "Rule 20260212",
+            "id": "no-overnight-sl033-tp132-tsl035-fc1425",
             "created_at": "2026-02-12",
             "risk_management": {
                 "stop_loss": {
@@ -22,14 +22,14 @@
             "time_management": {
                 "hold_overnight": {
                     "type": "boolean",
-                    "value": true
+                    "value": false
                 },
                 "max_holding_time": {
                     "enabled": false,
                     "unit": "bars",
                     "value": 0
                 },
-                "force_close_at": "14:45"
+                "force_close_at": "14:25"
             }
         }
     ]
