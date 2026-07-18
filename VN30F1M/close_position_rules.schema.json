@@ -16,6 +16,39 @@
                     "name": {
                         "type": "string"
                     },
+                    "risk_management": {
+                        "type": "object",
+                        "properties": {
+                            "stop_loss": {
+                                "type": "object",
+                                "properties": {
+                                    "required": {
+                                        "type": "boolean"
+                                    }
+                                },
+                                "additionalProperties": true
+                            },
+                            "take_profit": {
+                                "type": "object",
+                                "properties": {
+                                    "required": {
+                                        "type": "boolean"
+                                    }
+                                },
+                                "additionalProperties": true
+                            },
+                            "trailing_stop_loss": {
+                                "type": "object",
+                                "properties": {
+                                    "required": {
+                                        "type": "boolean"
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        },
+                        "additionalProperties": true
+                    },
                     "time_management": {
                         "type": "object",
                         "required": [

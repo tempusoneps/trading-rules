@@ -8,28 +8,36 @@
             "risk_management": {
                 "stop_loss": {
                     "type": "percent",
-                    "value": 0.33
+                    "value": 0.33,
+                    "required": true
                 },
                 "take_profit": {
                     "type": "percent",
-                    "value": 1.32
+                    "value": 1.32,
+                    "required": true
                 },
                 "trailing_stop_loss": {
                     "type": "percent",
-                    "value": 0.35
+                    "value": 0.35,
+                    "required": false
                 }
             },
             "time_management": {
                 "hold_overnight": {
                     "type": "boolean",
-                    "value": false
+                    "value": false,
+                    "required": false
                 },
                 "max_holding_time": {
                     "enabled": false,
                     "unit": "bars",
-                    "value": 0
+                    "value": 0,
+                    "required": false
                 },
-                "force_close_at": "14:25"
+                "force_close": {
+                    "time": "14:25",
+                    "required": false
+                }
             }
         }
     ]
